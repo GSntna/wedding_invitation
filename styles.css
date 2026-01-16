@@ -1,0 +1,52 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Envelope hover effect */
+.envelope-container {
+    perspective: 1000px;
+}
+
+.envelope-image {
+    transition: transform 0.3s ease;
+}
+
+.envelope-image:hover {
+    transform: translateY(-10px);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for invitation sections */
+.invitation-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.invitation-section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.invitation-section:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
